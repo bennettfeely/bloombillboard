@@ -59,7 +59,7 @@ main {
 	display: inline-block;
 	vertical-align: top;
 	width: 50%;
-	min-width: 25em;
+	min-width: 18em;
 	margin: 0 auto;
 }
 
@@ -75,10 +75,14 @@ main {
 // Typography ============================================================================
 
 .bloomy {
-	float:left;
-	width: 100px;
-	height: 100px;
-	margin-right: 1em;
+	display: block;
+	width: 4em;
+	height: 4em;
+
+	@media (min-width: $tablet) {
+		float:left;
+		margin-right: 1em;
+	}
 }
 
 h1 {

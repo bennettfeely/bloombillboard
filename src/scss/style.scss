@@ -114,6 +114,10 @@ img {
 	border-radius: 3px;
 }
 
+.actions {
+	margin-top: .5em;
+}
+
 label {
 	display: inline-block;
 	padding: .5em;
@@ -142,7 +146,7 @@ label {
 
 .billboard-color {
 	@extend %no-select;
-	margin: 1.5rem .5rem 0;
+	margin: .5rem .5rem 0;
 
 	h3 {
 		display: inline-block;
@@ -158,6 +162,10 @@ label {
 	color: #aaa;
 }
 
+
+.share-box {
+	margin-top: .5em;
+}
 
 
 // Advertisment

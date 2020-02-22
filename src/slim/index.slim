@@ -28,7 +28,9 @@ html lang="en"
 						canvas.live-canvas width="1200" height="800"
 						img.live-img src="" width="1200" height="800"
 						// img.cyan-img src="img/cyan.jpg" width="1200" height="800"
-						a.download-link Download Image
+						
+						.actions
+							a.download-link Download Image
 				section.sidebar
 					.container
 						label.top-line
@@ -37,19 +39,23 @@ html lang="en"
 						label.bottom-line
 							h3 Bottom Line
 							input.bottom-line-input placeholder="MIKE BLOOMBERG LIKES HIS MEDIUM RARE."
-						.billboard-color
-							label
-								input.billboard-color-input checked="true" type="radio" id="cyan-input" name="billboard-color-input"
-								h3 Cyan
-							label.disabled
-								input.billboard-color-input type="radio" id="red-input" name="billboard-color-input" disabled="true"
-								h3 Red 
-							label.disabled
-								input.billboard-color-input type="radio" id="white-input" name="billboard-color-input" disabled="true"
-								h3 White
+						/ .billboard-color
+						/ 	label
+						/ 		input.billboard-color-input checked="true" type="radio" id="cyan-input" name="billboard-color-input"
+						/ 		h3 Cyan
+						/ 	label.disabled
+						/ 		input.billboard-color-input type="radio" id="red-input" name="billboard-color-input" disabled="true"
+						/ 		h3 Red 
+						/ 	label.disabled
+						/ 		input.billboard-color-input type="radio" id="white-input" name="billboard-color-input" disabled="true"
+						/ 		h3 White
 					.container
 						.add-box
 							script async="true" type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYIL27N&placement=bennettfeelycom" id="_carbonads_js"
+						.share-box
+							h3 Share this page
+							a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Make your own Bloombillboard" data-related="bennettfeely" data-dnt="true" data-show-count="false" Tweet
+							script async="async" src="https://platform.twitter.com/widgets.js" charset="utf-8"
 		script src="js/mike.js"
 		script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-35724550-1"
 		script

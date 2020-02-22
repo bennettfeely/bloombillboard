@@ -1,49 +1,21 @@
-// Charset =====================================================================
+// Charset =============================================================
 @charset "UTF-8";
 
-// Normalize ===================================================================
+// Normalize ===========================================================
 @import "normalize";
 @import "reset";
 @import "extensions";
 @import "functions";
 
-// Variables ===================================================================
+// Variables ===========================================================
 $black: #16161d;
 $white: #fff;
-$gray-900: mix($black, $white, 90%);
-$gray-800: mix($black, $white, 80%);
-$gray-700: mix($black, $white, 70%);
-$gray-600: mix($black, $white, 60%);
-$gray-500: mix($black, $white, 50%);
-$gray-400: mix($black, $white, 40%);
-$gray-300: mix($black, $white, 30%);
-$gray-200: mix($black, $white, 20%);
-$gray-100: mix($black, $white, 10%);
-$gray-50: mix($black, $white, 5%);
-
-$gray-700a: rgba($black, 0.75);
-$gray-300a: rgba($black, 0.3);
-$gray-100a: rgba($black, 0.1);
-
-$gold: #e8c166;
 
 $mobile: 44em;
 $tablet: 44em;
 $desktop: 66em;
 
-:root {
-	--large: 1.5rem;
-	--padding: 1rem;
-	--padding-small: 0.5em;
-	--radius: 4px;
-	--logo-size: 5rem;
-
-	@media (min-width: $tablet) {
-		--logo-size: 3rem;
-	}
-}
-
-// Base Styles =================================================================
+// Base Styles =========================================================
 body {
 	font: 100%/1.5 Montserrat, sans-serif;
 	background: $white;
@@ -51,18 +23,13 @@ body {
 	padding: 1em 0;
 }
 
-main {
-
-}
 
 .results, .sidebar {
-
-
 	@media (min-width: $tablet) {
-	display: inline-block;
-	vertical-align: top;
-	margin: 0 auto;		width: 50%;
-
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 auto;
+		width: 50%;
 	}
 }
 
@@ -75,14 +42,20 @@ main {
 	margin: 1em;
 }
 
-// Typography ============================================================================
+img {
+	border-radius: 3px;
+	vertical-align: top;
+}
 
+
+// Header image ========================================================
 .bloomy {
 	display: block;
 	width: 5em;
 	height: 5em;
 }
 
+// Typography ==========================================================
 h1 {
 	text-transform: uppercase;
 	font-size: 1.6em;
@@ -110,11 +83,8 @@ h3 {
 	margin-bottom: 0;
 }
 
-img {
-	border-radius: 3px;
-	vertical-align: top;
-}
 
+// Images ==============================================================
 .live-canvas,
 .cyan-img,
 .red-img,
@@ -133,10 +103,14 @@ img {
 	border-radius: 3px;
 }
 
+
+// Download button =====================================================
 .actions {
 	margin-top: .5em;
 }
 
+
+// Fields ==============================================================
 label {
 	display: inline-block;
 	padding: .5em;
@@ -182,12 +156,13 @@ label {
 }
 
 
+// Share button ========================================================
 .share-box {
 	margin: .5em .5em 1em;
 }
 
 
-// Advertisment
+// Advertisment ========================================================
 .add-box {
 	display: block;
 	margin: 0 .5em;

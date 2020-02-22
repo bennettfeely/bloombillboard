@@ -38,6 +38,14 @@ function draw() {
 	var top_text = document.querySelector('.top-line-input').value;
 	var bottom_text = document.querySelector('.bottom-line-input').value;
 
+	if (top_text == "") {
+		var top_text = "DONALD TRUMP EATS BURNT STEAK."
+	}
+
+	if (bottom_text == "") {
+		var bottom_text = "MIKE BLOOMBERG LIKES HIS MEDIUM RARE.";
+	}
+
 	ctx.setTransform(1, 0, 0, 1, 0, 0);
 	ctx.drawImage(img, 0, 0, 1200, 800);
 

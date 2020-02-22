@@ -33,10 +33,10 @@ html lang="en"
 					.container
 						label.top-line
 							h3 Top Line
-							input.top-line-input
+							input.top-line-input placeholder="DONALD TRUMP EATS BURNT STEAK."
 						label.bottom-line
 							h3 Bottom Line
-							input.bottom-line-input
+							input.bottom-line-input placeholder="MIKE BLOOMBERG LIKES HIS MEDIUM RARE."
 						.billboard-color
 							label
 								input.billboard-color-input checked="true" type="radio" id="cyan-input" name="billboard-color-input"
@@ -50,5 +50,10 @@ html lang="en"
 					.container
 						.add-box
 							script async="true" type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYIL27N&placement=bennettfeelycom" id="_carbonads_js"
-
 		script src="js/mike.js"
+		script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-35724550-1"
+		script
+			| window.dataLayer = window.dataLayer || [];
+			| function gtag(){dataLayer.push(arguments)};
+			| gtag('js', new Date());
+			| gtag('config', 'UA-35724550-1');

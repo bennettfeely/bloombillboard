@@ -1,0 +1,54 @@
+doctype html
+html lang="en"
+	head
+		meta charset="utf-8"
+		meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		title Bloombillboard
+		meta name="description" content="Bloombillboard."
+		link href="/css/style.min.css" rel="stylesheet"
+		link href="https://fonts.googleapis.com/css?family=Montserrat:500,800&display=swap" rel="stylesheet" type="text/css"
+		link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png"
+		link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png"
+		link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png"
+		meta property="og:image:height" content="520"
+		meta property="og:image:width" content="993"
+		meta property="og:title" content="Bloombillboard"
+		meta property="og:description" content="Bloombillboard is a Pittsburgh based startup creating the next generation of intelligent infrastructure and safety devices for vehicle systems"
+		meta property="og:url" content="https://soteriaradar.com"
+		meta property="og:image" content="https://soteriaradar.com/img/cover_photo_1000x800.jpg/og-image.jpg"
+	body
+		.wrapper
+			header
+				.container
+					h1 Make your own Bloomberg billboard
+					p Mike is spending hundreds of millions of his dollars on a presidential run. Help him out by making your own billboard!
+			main
+				section.results
+					.container
+						canvas.live-canvas width="1200" height="800"
+						img.live-img src="" width="1200" height="800"
+						// img.cyan-img src="img/cyan.jpg" width="1200" height="800"
+						a.download-link Download Image
+				section.sidebar
+					.container
+						label.top-line
+							h3 Top Line
+							input.top-line-input
+						label.bottom-line
+							h3 Bottom Line
+							input.bottom-line-input
+						.billboard-color
+							label
+								input.billboard-color-input checked="true" type="radio" id="cyan-input" name="billboard-color-input"
+								h3 Cyan
+							label.disabled
+								input.billboard-color-input type="radio" id="red-input" name="billboard-color-input" disabled="true"
+								h3 Red 
+							label.disabled
+								input.billboard-color-input type="radio" id="white-input" name="billboard-color-input" disabled="true"
+								h3 White
+					.container
+						.add-box
+							script async="true" type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYIL27N&placement=bennettfeelycom" id="_carbonads_js"
+
+		script src="js/mike.js"

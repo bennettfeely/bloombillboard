@@ -1,0 +1,206 @@
+// Charset =====================================================================
+@charset "UTF-8";
+
+// Normalize ===================================================================
+@import "normalize";
+@import "reset";
+@import "extensions";
+@import "functions";
+
+// Variables ===================================================================
+$black: #16161d;
+$white: #fff;
+$gray-900: mix($black, $white, 90%);
+$gray-800: mix($black, $white, 80%);
+$gray-700: mix($black, $white, 70%);
+$gray-600: mix($black, $white, 60%);
+$gray-500: mix($black, $white, 50%);
+$gray-400: mix($black, $white, 40%);
+$gray-300: mix($black, $white, 30%);
+$gray-200: mix($black, $white, 20%);
+$gray-100: mix($black, $white, 10%);
+$gray-50: mix($black, $white, 5%);
+
+$gray-700a: rgba($black, 0.75);
+$gray-300a: rgba($black, 0.3);
+$gray-100a: rgba($black, 0.1);
+
+$gold: #e8c166;
+
+$mobile: 44em;
+$tablet: 44em;
+$desktop: 66em;
+
+:root {
+	--large: 1.5rem;
+	--padding: 1rem;
+	--padding-small: 0.5em;
+	--radius: 4px;
+	--logo-size: 5rem;
+
+	@media (min-width: $tablet) {
+		--logo-size: 3rem;
+	}
+}
+
+// Base Styles =================================================================
+body {
+	font: 100%/1.5 Montserrat, sans-serif;
+	background: $white;
+	color: $black;
+	padding: 1em 0;
+}
+
+main {
+
+}
+
+.results, .sidebar {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	min-width: 25em;
+	margin: 0 auto;
+}
+
+.wrapper {
+	max-width: 70em;
+	margin: 0 auto;
+}
+
+.container {
+	margin: 1em;
+}
+
+// Typography ============================================================================
+h1 {
+	text-transform: uppercase;
+	line-height: 1.1;
+	margin-bottom: 1rem;
+}
+
+
+h2 {
+	font-weight: 500;
+	font-size: 1em;
+}
+
+h3 {
+	font-size: 1em;
+	font-weight: 500;
+	margin-bottom: 0;
+}
+
+img {
+	border-radius: 3px;
+	vertical-align: top;
+}
+
+.live-canvas,
+.cyan-img,
+.red-img,
+.white-img {
+	display: none;
+}
+
+.live-canvas,
+.live-img,
+.cyan-img,
+.red-img,
+.white-img {
+	background: gainsboro;
+	width: 100%;
+	height: auto;
+	border-radius: 3px;
+}
+
+label {
+	display: inline-block;
+	padding: .5em;
+}
+
+.top-line, .bottom-line {
+	display: block;
+	width: 100%;
+}
+
+.top-line-input, .bottom-line-input {
+	width: 100%;
+	border: thin solid black;
+	padding: .5em;
+	font: inherit;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: .25em;
+
+	&:focus {
+		outline: 0;
+		box-shadow: .25rem .25rem dodgerblue;
+	}
+}
+
+.billboard-color {
+	@extend %no-select;
+	margin: 1.5rem .5rem 0;
+
+	h3 {
+		display: inline-block;
+	}
+}
+
+.billboard-color-input {
+	margin-right: .5em;
+}
+
+.disabled h3 {
+	text-decoration: line-through;
+	color: #aaa;
+}
+
+
+
+// Advertisment
+.add-box {
+	display: block;
+	padding: .5em;
+	background: #eee;
+	border-radius: 3px;
+	overflow: hidden;
+	max-width: 22em;
+
+	a {
+		border: 0;
+	}
+}
+
+.carbon-img {
+	display: block;
+	margin: 0 auto;
+	float: left;
+	margin-right: 1em;
+
+	img {
+		width: 100%;
+		height: auto;
+		vertical-align: top;
+	}
+}
+
+.carbon-text {
+	display: block;
+	font-size: 13px;
+	color: black;
+	padding: .5em 0;
+	text-decoration: none;
+
+	.ad-box:hover & {
+		color: dodgerblue;
+	}
+}
+
+.carbon-poweredby {
+	font-size: 11px;
+	display: block;
+	color: #aaa;
+}

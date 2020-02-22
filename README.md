@@ -1,2 +1,3 @@
-# bloombillboard
-Make a Bloomberg Billboard
+# Bloombillboard
+
+Check it out: https://bloombillboard.netlify.com

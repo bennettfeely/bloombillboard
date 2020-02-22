@@ -70,8 +70,8 @@ function draw() {
 
 	live_img.src = canvas.toDataURL("image/jpeg");
 
-	download_link.download = 'bloombergbillboard.jpg';
 	download_link.href = new_src;
+	download_link.download = 'bloombergbillboard.jpg';
 }
 
 
